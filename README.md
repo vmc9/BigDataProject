@@ -7,7 +7,7 @@ Possible datasets include:
 
 # [detection_of_IoT_botnet_attacks_N_BaIoT Data Set](http://archive.ics.uci.edu/ml/datasets/detection_of_IoT_botnet_attacks_N_BaIoT#)
 ### Summary:
-- Classification is possible on this data set since it is composed of data from 10 different attacks, carries out by 2 separate botnets, so training a model for multi-class classification to recognize different attacks is possible
+- Classification is possible on this data set since it is composed of data from 10 different attacks, carried out by 2 separate botnets, so training a model for multi-class classification to recognize different attacks is possible
 - Simply classifing the input as "benign" or "malicious" is also a possibility
 - The data set is composed of network traffic data from 9 different IoT devices, such as a thermostat, a doorbell, etc.
 
