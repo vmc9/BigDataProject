@@ -16,8 +16,8 @@ Possible datasets include:
 - 115 attributes
 - from 2018-03-19
 - possible tasks: 
- - Classification
- - Clustering
+  - Classification
+  - Clustering
 
 
 # [Kitsune Network Attack Dataset Data Set](http://archive.ics.uci.edu/ml/datasets/Kitsune+Network+Attack+Dataset)
