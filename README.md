@@ -141,7 +141,7 @@ The above could be grouped into fewer clusters, so we could have to adjust accor
 
 Since all our features have numerical values, we chose the Euclidean distance to find the nearest centroid of a particular data point. Moreover, to handle the different units of measurement among attributes, we will normalize the data points prior to computing the distance.
 
-During training, we will run the algorithm using randomized initialization of centroids, and we will pick the version that generates the lowest sum of squared distances for all clusters.
+During training, we will run the algorithm using randomized initialization of centroids, and we will pick the version that satisfies 2 criteria: It generates lowest intra-cluster distance, and highest inter cluster distance. To do so, we will use the Inertia evaluation metric, and the Dunn index.
 
 We will then use our optimal k-means algorithm to predict the clusters of a testing dataset, for which we will know the classes.
 
