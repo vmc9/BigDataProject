@@ -104,5 +104,18 @@ Each time-frame is how much recent history of the stream is capture in these sta
 ### Methods Summary:
 
 ##### Random Forrest / Decision Tree
+We will use Random Forest for 2-class classification. In particular, we would like to predict unlabelled datapoints that could be classified as either malign or benign.
+As for data pre-processing, we will have to assign labels, either malign or benign, to some instances in our dataset. This can easily be done, since the data is nicely divided into malign and benign data sets.
+Moreover, we intend to evaluate the 115 features to determine how much each is contributing to the prediction. Consequently, we may be able to reduce the number of features, which can improve the quality of our data, and further eradicate overfitting.
+In the training process, we will test 2 purity metrics, Entropy and Gini. Also, we intend to do hyperparameter tuning. In random forest, hyperparameters are either used to increase predictive power, or to increase the model’s computation speed.
+Some of the hyper-parameters that we will tune to increase predictive power are:
+1. n_estimators: determines the number of trees that the algorithm uses to make a prediction.
+2. max_features: represents the maximum number of features considered to split a node in a tree.
+3. min_sample_leaf: determines the minimum number of leaves needed to split a node.
+For computation speed, we will tune:
+1. oob_score: it is a random forest cross-validation method.
+During testing, we intend to use various evaluation metrics to compare results between different versions of the model. In particular, we will look at Accuracy, F1-score, and a confusion matrix.
+
+
 
 ##### K-means Clustering
