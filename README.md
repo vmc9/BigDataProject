@@ -104,6 +104,7 @@ Each time-frame is how much recent history of the stream is capture in these sta
 ### Methods Summary:
 
 ##### Random Forrest / Decision Tree
+
 We will use Random Forest for 2-class classification. In particular, we would like to predict unlabelled datapoints that could be classified as either malign or benign.
 
 As for data pre-processing, we will have to assign labels, either malign or benign, to some instances in our dataset. This can easily be done, since the data is nicely divided into malign and benign data sets.
@@ -125,3 +126,23 @@ During testing, we intend to use various evaluation metrics to compare results b
 
 
 ##### K-means Clustering
+
+We will use K-means Clustering to do multi-class classification. In particular, we expect to cluster the existing types of attacks in our dataset:
+1. Network scanning for vulnerable devices
+2. Junk: sending spam data
+3. UDP flooding
+4. TCP flooding
+5. COMBO: sending spam and opening a connection
+6. Ack flooding
+7. Syn flooding
+8. UDP flooding with fewer options.
+
+The above could be grouped into fewer clusters, so we could have to adjust according to our initial results.
+
+Since all our features have numerical values, we chose the Euclidean distance to find the nearest centroid of a particular data point. Moreover, to handle the different units of measurement among attributes, we will normalize the data points prior to computing the distance.
+
+During training, we will run the algorithm using randomized initialization of centroids, and we will pick the version that generates the lowest sum of squared distances for all clusters.
+
+We will then use our optimal k-means algorithm to predict the clusters of a testing dataset, for which we will know the classes.
+
+We intend to use various evaluation metrics to compare results between different versions of the model. In particular, we will look at Accuracy, F1-score, and a confusion matrix.
