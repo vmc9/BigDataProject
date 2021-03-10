@@ -105,4 +105,44 @@ Each time-frame is how much recent history of the stream is capture in these sta
 
 ##### Random Forrest / Decision Tree
 
+We will use Random Forest for 2-class classification. In particular, we would like to predict unlabelled datapoints that could be classified as either malign or benign.
+
+As for data pre-processing, we will have to assign labels, either malign or benign, to some instances in our dataset. This can easily be done, since the data is nicely divided into malign and benign data sets.
+
+Moreover, we intend to evaluate the 115 features to determine how much each is contributing to the prediction. Consequently, we may be able to reduce the number of features, which can improve the quality of our data, and further eradicate overfitting.
+
+In the training process, we will test 2 purity metrics, Entropy and Gini. Also, we intend to do hyperparameter tuning. In random forest, hyperparameters are either used to increase predictive power, or to increase the model’s computation speed.
+
+Some of the hyper-parameters that we will tune to increase predictive power are:
+1. n_estimators: determines the number of trees that the algorithm uses to make a prediction.
+2. max_features: represents the maximum number of features considered to split a node in a tree.
+3. min_sample_leaf: determines the minimum number of leaves needed to split a node.
+
+For computation speed, we will tune:
+1. oob_score: it is a random forest cross-validation method.
+
+During testing, we intend to use various evaluation metrics to compare results between different versions of the model. In particular, we will look at Accuracy, F1-score, and a confusion matrix.
+
+
+
 ##### K-means Clustering
+
+We will use K-means Clustering to do multi-class classification. In particular, we expect to cluster the existing types of attacks in our dataset:
+1. Network scanning for vulnerable devices
+2. Junk: sending spam data
+3. UDP flooding
+4. TCP flooding
+5. COMBO: sending spam and opening a connection
+6. Ack flooding
+7. Syn flooding
+8. UDP flooding with fewer options.
+
+The above could be grouped into fewer clusters, so we could have to adjust according to our initial results.
+
+Since all our features have numerical values, we chose the Euclidean distance to find the nearest centroid of a particular data point. Moreover, to handle the different units of measurement among attributes, we will normalize the data points prior to computing the distance.
+
+During training, we will run the algorithm using randomized initialization of centroids, and we will pick the version that satisfies 2 criteria: It generates lowest intra-cluster distance, and highest inter cluster distance. To do so, we will use the Inertia evaluation metric, and the Dunn index.
+
+We will then use our optimal k-means algorithm to predict the clusters of a testing dataset, for which we will know the classes.
+
+We intend to use various evaluation metrics to compare results between different versions of the model. In particular, we will look at Accuracy, F1-score, and a confusion matrix.
