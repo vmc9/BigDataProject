@@ -179,27 +179,40 @@ We intend to use various evaluation metrics to compare results between different
 
   - All labels:  ACK, SCAN, SYN, UDP, UDP plain, Benign
   - K0 held 4% of all data clustered.
-    - Cluster composition : 99.44% Benign, <1% for UDP, ACK, SYN, and UDP plain ![](https://github.com/vmc9/BigDataProject/blob/main/figures/m_k0.png)
+    - Cluster composition : 99.44% Benign, <1% for UDP, ACK, SYN, and UDP plain 
+![](https://github.com/vmc9/BigDataProject/blob/main/figures/m_k0.png)
+  
   
 
   - K1 held 19.35% of all data clustered. 
-    - Cluster composition: 50.47% UDP, 24.79% UDP plain, 24.68% ACK, 0.06% Benign ![](https://github.com/vmc9/BigDataProject/blob/main/figures/m_k1.png)
+    - Cluster composition: 50.47% UDP, 24.79% UDP plain, 24.68% ACK, 0.06% Benign 
+![](https://github.com/vmc9/BigDataProject/blob/main/figures/m_k1.png)
+
 
 
   - K2 held 29.75% of all data clustered.
-    - Cluster composition: 64.84% UDP, 35.07% ACK, 0.05% Benign, 0.04% UDP plain ![](https://github.com/vmc9/BigDataProject/blob/main/figures/m_k2.png)
+    - Cluster composition: 64.84% UDP, 35.07% ACK, 0.05% Benign, 0.04% UDP plain 
+![](https://github.com/vmc9/BigDataProject/blob/main/figures/m_k2.png)
+
 
 
   - K3 held 0.75% of all data clustered.
-    - Cluser composition: 100% Benign ![](https://github.com/vmc9/BigDataProject/blob/main/figures/m_k3.png)
+    - Cluser composition: 100% Benign 
+![](https://github.com/vmc9/BigDataProject/blob/main/figures/m_k3.png)
+
 
 
   - K4  held 7.4% of all data clustered.
-    - Cluster composition: 100% UDP plain ![](https://github.com/vmc9/BigDataProject/blob/main/figures/m_k4.png)
+    - Cluster composition: 100% UDP plain 
+![](https://github.com/vmc9/BigDataProject/blob/main/figures/m_k4.png)
+
 
 
   - K5 held 38.6% of all data clustered.
-    - Cluster composition: 45.13% SYN, 33.06% SCAN, 21.52% Bening, 0.29% ACK ![](https://github.com/vmc9/BigDataProject/blob/main/figures/m_k5.png)
+    - Cluster composition: 45.13% SYN, 33.06% SCAN, 21.52% Bening, 0.29% ACK 
+![](https://github.com/vmc9/BigDataProject/blob/main/figures/m_k5.png)
+
+
 
 #### Bashlite Results
 - For Bashlite, which has 5 kinds of attacks, alongside benign traffic, our analysis resulted in a local maximum of 7 clusters, which was close to our number of labels.
@@ -208,32 +221,46 @@ We intend to use various evaluation metrics to compare results between different
 
   - All labels:  COMBO, SCAN, SYN, UDP, JUNK, Benign
   - K0 held 72.9% of all data clustered.
-    - Cluster composition : 38.39% UDP, 34.71% TCP, 16.62% Benign, 10.19% Scan ![](https://github.com/vmc9/BigDataProject/blob/main/figures/b_k0.png)
+    - Cluster composition : 38.39% UDP, 34.71% TCP, 16.62% Benign, 10.19% Scan 
+![](https://github.com/vmc9/BigDataProject/blob/main/figures/b_k0.png)
+    
     
     
   - K1 held 22.84% of all data clustered. 
-    - Cluster composition: 66.25% COMBO, 33.63% JUNK, 0.12% Benign ![](https://github.com/vmc9/BigDataProject/blob/main/figures/b_k1ng)
+    - Cluster composition: 66.25% COMBO, 33.63% JUNK, 0.12% Benign 
+![](https://github.com/vmc9/BigDataProject/blob/main/figures/b_k1ng)
+    
     
     
   - K2 held 1.82% of all data clustered.
-    - Cluster composition: 97.41% Benign, 1.56% Scan, <1% COMBO, UDP, TCP, JUNK ![](https://github.com/vmc9/BigDataProject/blob/main/figures/b_k2png)
+    - Cluster composition: 97.41% Benign, 1.56% Scan, <1% COMBO, UDP, TCP, JUNK 
+![](https://github.com/vmc9/BigDataProject/blob/main/figures/b_k2png)
+    
     
     
   - K3 held 0.17% of all data clustered.
-    - Cluser composition: 92.71% Benign, 3.31% COMBO ![](https://github.com/vmc9/BigDataProject/blob/main/figures/b_k3png)
+    - Cluser composition: 92.71% Benign, 3.31% COMBO 
+![](https://github.com/vmc9/BigDataProject/blob/main/figures/b_k3png)
+    
     
     
   - K4  held 1.47% of all data clustered.
-    - Cluster composition: 97.08% UDP plain, 1.89% SCAN, <1% COMBO, UDP, TCP, JUNK ![](https://github.com/vmc9/BigDataProject/blob/main/figures/b_k4png)
+    - Cluster composition: 97.08% UDP plain, 1.89% SCAN, <1% COMBO, UDP, TCP, JUNK 
+![](https://github.com/vmc9/BigDataProject/blob/main/figures/b_k4png)
+    
     
     
   - K5 held 0.04% of all data clustered.
-    - Cluster composition: 100% Benign ![](https://github.com/vmc9/BigDataProject/blob/main/figures/b_k5png)
+    - Cluster composition: 100% Benign 
+![](https://github.com/vmc9/BigDataProject/blob/main/figures/b_k5png)
+    
     
     
   - K6 held 0.72% of all data clustered.
-    - Cluster composition: 100% Benign ![](https://github.com/vmc9/BigDataProject/blob/main/figures/b_k6png)
+    - Cluster composition: 100% Benign 
+![](https://github.com/vmc9/BigDataProject/blob/main/figures/b_k6png)
     
+
 
 ## Discussion:
 - 
