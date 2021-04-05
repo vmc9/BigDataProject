@@ -174,6 +174,9 @@ We intend to use various evaluation metrics to compare results between different
 
 #### Mirai Results
 - For Mirai, which has 5 kinds of attacks, alongside benign traffic, our analysis resulted in a local maximum of 6 clusters, which matched our number of labels.
+
+![](https://github.com/vmc9/BigDataProject/blob/main/figures/bashlite_graph.png)
+
   - All labels:  ACK, SCAN, SYN, UDP, UDP plain, Benign
   - K0 held 4% of all data clustered.
     - Cluster composition : 99.44% Benign, <1% for UDP, ACK, SYN, and UDP plain
