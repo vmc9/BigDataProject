@@ -173,7 +173,7 @@ We intend to use various evaluation metrics to compare results between different
 - Using this analysis, we found the optimal k for clustering.
 
 #### Mirai Results
-- For Mirai, which has 5 kinds of attacks, alongside benign traffic, our analysis resulted in a local maximum of 6 clusters, which matched our labels.
+- For Mirai, which has 5 kinds of attacks, alongside benign traffic, our analysis resulted in a local maximum of 6 clusters, which matched our number of labels.
   - All labels:  ACK, SCAN, SYN, UDP, UDP plain, Benign
   - K0 held 4% of all data clustered.
     - Cluster composition : 99.44% Benign, <1% for UDP, ACK, SYN, and UDP plain
@@ -188,6 +188,22 @@ We intend to use various evaluation metrics to compare results between different
   - K5 held 38.6% of all data clustered.
     - Cluster composition: 45.13% SYN, 33.06% SCAN, 21.52% Bening, 0.29% ACK
 
-
+#### Bashlite Results
+- For Bashlite, which has 5 kinds of attacks, alongside benign traffic, our analysis resulted in a local maximum of 7 clusters, which was close to our number of labels.
+  - All labels:  COMBO, SCAN, SYN, UDP, JUNK, Benign
+  - K0 held 72.9% of all data clustered.
+    - Cluster composition : 38.39% UDP, 34.71% TCP, 16.62% Benign, 10.19% Scan
+  - K1 held 22.84% of all data clustered. 
+    - Cluster composition: 66.25% COMBO, 33.63% JUNK, 0.12% Benign
+  - K2 held 1.82% of all data clustered.
+    - Cluster composition: 97.41% Benign, 1.56% Scan, <1% COMBO, UDP, TCP, JUNK
+  - K3 held 0.17% of all data clustered.
+    - Cluser composition: 92.71% Benign, 3.31% COMBO
+  - K4  held 1.47% of all data clustered.
+    - Cluster composition: 97.08% UDP plain, 1.89% SCAN, <1% COMBO, UDP, TCP, JUNK
+  - K5 held 0.04% of all data clustered.
+    - Cluster composition: 100% Benign
+  - K6 held 0.72% of all data clustered.
+    - Cluster composition: 100% Benign
 
 ## Discussion:
