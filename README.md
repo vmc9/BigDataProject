@@ -146,8 +146,19 @@ We will then use our optimal k-means algorithm to predict the clusters of a test
 We intend to use various evaluation metrics to compare results between different versions of the model. In particular, we will look at Accuracy, F1-score, and a confusion matrix.
 
 
-### Methods Results:
+## Methods Results:
 
+### Random Forest Results
+- A naive attempt at random forest, with no data preprocessing, grid search, or hyperparameter tuning resulting in predictions which led us to believe that the model was overfitting the data
+| Metric  | Bashlite Result | Mirai Result  |
+| ------------- | ------------- |
+| Accuracy  | 99.94%  | 99.99%  |
+| F1  | 99.94%  | 99.99%  |
+| FP Rate for Benign  | 0.07%  | 0.0%  |
+| TP Rate for Bening  | 99.96%  | 99.98%  |
+| FP Rate for Malicious  | 0.03%  | 0.01%  |
+| TP Rate for Malicious | 99.92%  | 99.99%  |
+| Precision  | 99.94% | 99.99%  |
+| Recall  | 99.94%  | 99.99%  |
 
-
-### Discussion:
+## Discussion:
