@@ -24,18 +24,16 @@ malign or benign network traffic. The dataset includes benign / malign data
  instances already allowing binary classification without modifying the dataset.
 - Here we plan to use decision trees or random forrest to perform the classification task.
 ##### Multi-Class Classification
-- The second objective is to classify any instance of data as originating from a type of network attack. The dataset
- does not include attack type / botnet type / device type as labels, but these can be
-  easily added and we can splice and bind the data into one or more dataset(s) that can be used for multi-class
-   classification.
-- Here we plan to use k-means clustering to perform the classification task.
+- The second objective is to run a clustering algorithm on the data, and compare using the data labels to see the acuracy of the clusters
+- Here we plan to use kmneans to compare clustering with classification labels refering to the kind of data packet each data instance represents
+- Once clustering is complete, we can inspect the clusters and see their composition to determine if clustering was done according to labels in any way
    
 Successful classification in our first objective will help demonstrate that Big Data analysis techniques can be
  utilized alongside Machine Learning algorithms to detect incoming botnet attacks, and to label network traffic in an
   IoT context as dangerous or not. The generalizations of such findings could be applicable in many different
    scenarios considering the pervasiveness of botnet attacks and wide adoption of IoT devices.
    
- Successful classification in our second objective will help demonstrate that Big Data analysis techniques can be
+ Successful clustering in our second objective will help demonstrate that Big Data analysis techniques can be
   utilized alongside Machine Learning algorithms to identify network data as associated with a known attack pattern
   , or a known botnet. The generalization of such findings could be applicable in cyber forensics, threat detection
   , and threat mitigation.
@@ -146,3 +144,10 @@ During training, we will run the algorithm using randomized initialization of ce
 We will then use our optimal k-means algorithm to predict the clusters of a testing dataset, for which we will know the classes.
 
 We intend to use various evaluation metrics to compare results between different versions of the model. In particular, we will look at Accuracy, F1-score, and a confusion matrix.
+
+
+### Methods Results:
+
+
+
+### Discussion:
